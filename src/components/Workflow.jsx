@@ -9,7 +9,7 @@ const Workflow = () => {
   const xLeft = useTransform(scrollYProgress, [0, 1], [300, -300]); 
 
   return (
-    <div className=" min-h-[1114px] text-[rgb(226,230,225)] overflow-hidden flex flex-col items-center font-semibold">
+    <div className="overflow-hidden flex flex-col items-center font-semibold">
       <motion.h1
         className="text-[180px] leading-none"
         style={{ x: xRight }} 
