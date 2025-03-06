@@ -1,9 +1,30 @@
-import React from 'react'
+import React from 'react';
 
 const Banner = () => {
   return (
-    <div>Banner</div>
-  )
-}
+    <div className="flex h-[600px]">
 
-export default Banner
+<div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-start justify-center text-white text-[20rem] font-bold leading-none pt-2">f</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border border-black flex items-start justify-center text-white text-[20rem] font-bold leading-none pt-4 overflow-hidden">i</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-start justify-center text-white text-[20rem] font-bold leading-none pt-4 "> n</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border border-black flex items-start justify-center text-white text-[20rem] font-bold leading-none pt-4 ">d</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-end justify-center text-white text-[20rem] font-bold">a</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">f</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">i</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">e</div>
+
+<div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">l</div>
+      
+<div className="w-1/10 bg-[rgb(255,87,65)] border border-black flex items-center justify-center text-white text-[20rem] font-bold overflow-hidden pb-32">d</div>
+</div>
+  );
+};
+
+export default Banner;

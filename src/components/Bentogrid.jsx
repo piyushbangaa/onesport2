@@ -2,7 +2,7 @@ import React from 'react';
 
 const Grid = () => {
   return (
-    <div className="mt-20 h-screen w-screen flex items-center justify-center px-10 overflow-hidden overflow-x-hidden overflow-y-auto max-w-full max-h-full">
+    <div className="mt-20 h-screen w-screen flex items-center justify-center px-10 overflow-hidden overflow-x-hidden overflow-y-auto max-w-full max-h-full pb-30">
       <div className="grid grid-cols-3 grid-rows-2 gap-6 w-full h-full p-10 max-w-full max-h-full box-border">
         {[
           { title: "1. Sign Up / Log In", desc: "Register using email, phone number, or social login.", span: "col-span-1 row-span-1" },
