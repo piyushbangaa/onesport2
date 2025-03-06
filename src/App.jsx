@@ -3,6 +3,8 @@ import Home from "./components/home"
 import Workflow from "./components/Workflow"
 import Bentogrid from "./components/Bentogrid"
 import Banner from "./components/Banner"
+import Pricing from "./components/Pricing"
+
 function App() {
   return (
     <>
@@ -11,6 +13,7 @@ function App() {
      <Workflow/>
      <Bentogrid/>
      <Banner/>
+     <Pricing/>
     </>
   )
 }
