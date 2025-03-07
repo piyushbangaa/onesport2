@@ -1,19 +1,19 @@
 import Navbar from "./components/navbar"
-import Home from "./components/home"
-import Workflow from "./components/Workflow"
+import Herosection from "./components/Herosection"
+import Heading from "./components/Heading"
 import Bentogrid from "./components/Bentogrid"
 import Banner from "./components/Banner"
-import Pricing from "./components/Pricing"
+import Features from "./components/Features"
 
 function App() {
   return (
     <>
      <Navbar/>
-     <Home/>
-     <Workflow/>
+     <Herosection/>
+     <Heading/>
      <Bentogrid/>
      <Banner/>
-     <Pricing/>
+     <Features/>
     </>
   )
 }
