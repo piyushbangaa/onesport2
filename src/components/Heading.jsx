@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const Workflow = () => {
+const Heading = () => {
   const { scrollYProgress } = useScroll(); 
 
 
@@ -27,4 +27,4 @@ const Workflow = () => {
   );
 };
 
-export default Workflow;
+export default Heading;

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Home = () => {
+const Herosection = () => {
   return (
     <div className="min-h-[645px] pt-52 ">
 
@@ -15,4 +15,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Herosection
