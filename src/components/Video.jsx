@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Video = () => {
   return (
-    <div className="relative w-screen h-screen bg-black p-[45px] box-border overflow-hidden">
+    <div className="relative w-screen h-screen bg-black p-[35px] box-border overflow-hidden">
       {/* Video Background */}
       <div className="w-full h-full overflow-hidden">
         <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
