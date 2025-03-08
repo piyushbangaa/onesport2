@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="flex flex-row min-h-[300px]">
-    <div className="mt-62 ml-10 w-1/4 flex flex-col text-left"> © OneSport 2025</div>
+    <div className="mt-62 ml-10 w-1/4 flex flex-col text-left "> © OneSport 2025</div>
     <div className="w-1/4 flex flex-col"></div>
 
     <div className="mt-37 w-1/4 flex flex-col text-left">

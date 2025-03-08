@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pricing = () => {
   return (
-    <div className='min-h-[550px] mt-30 ml-20 '>
+    <div className='min-h-[550px] mt-15 ml-20 '>
 
      <h1 className='text-5xl ml-15 font-bold'> Trusted by athletes, teams, and sports enthusiasts for seamless turf and <br /> field bookings</h1> 
 
