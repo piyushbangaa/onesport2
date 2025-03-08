@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Video = () => {
   return (
-    <div className="mt-15 relative w-screen h-screen bg-black p-[35px] box-border overflow-hidden">
+    <div className="mt-15 relative w-screen h-screen bg-black p-[30px] box-border overflow-hidden">
       <div className="w-full h-full overflow-hidden">
         <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
           <source src="src/assets/Screen Recording 2025-03-08 at 1.35.24 AM.mov" type="video/mp4" />
@@ -28,7 +28,7 @@ const Video = () => {
           One Sport
         </motion.h1>
         <motion.h2
-          className="text-lg md:text-2xl font-semibold mt-2 drop-shadow-lg "
+          className="text-lg md:text-2xl font-semibold mt-2 drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
