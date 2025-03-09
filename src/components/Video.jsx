@@ -3,36 +3,29 @@ import { motion } from "framer-motion";
 
 const Video = () => {
   return (
-    <div className="mt-15 relative w-screen h-screen bg-black p-[30px] box-border overflow-hidden">
-      <div className="w-full h-full overflow-hidden">
-        <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
-          <source src="public/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <div className="mt-20 relative w-screen h-screen bg-black p-[30px] box-border overflow-hidden">
+      <video
+        className="w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+        onError={(e) => console.error("Video failed to load", e)}
+      >
+        <source src="public/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center text-white text-center "
+        className="absolute inset-0 flex flex-col items-center justify-center text-white text-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true }}
       >
-        <motion.h1
-          className="text-6xl md:text-8xl font-extrabold drop-shadow-lg "
-          initial={{ scale: 0.8 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
-        >
+        <motion.h1 className="text-6xl md:text-8xl font-extrabold drop-shadow-lg">
           One Sport
         </motion.h1>
-        <motion.h2
-          className="text-lg md:text-2xl font-semibold mt-2 drop-shadow-lg "
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
+        <motion.h2 className="text-lg md:text-2xl font-semibold mt-2 drop-shadow-lg">
           Your One Solution to Excellence!
         </motion.h2>
       </motion.div>
