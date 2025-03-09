@@ -6,7 +6,7 @@ const Video = () => {
     <div className="mt-15 relative w-screen h-screen bg-black p-[30px] box-border overflow-hidden">
       <div className="w-full h-full overflow-hidden">
         <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
-          <source src="public/Screen Recording 2025-03-08 at 1.35.24 AM.mov" type="video/mp4" />
+          <source src="public/video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
