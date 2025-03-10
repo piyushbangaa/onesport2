@@ -15,7 +15,7 @@ const Login = () => {
   };
 
   return (
-    <div className="mt-28 flex items-center justify-center bg-black">
+    <div className="mt-33 flex items-center justify-center bg-black">
       <div className="p-8 w-95 max-w-md bg-black rounded-xl border border-gray-800 shadow-lg">
         <div className="text-center text-white">
           <h1 className="mt-4 text-3xl font-semibold">Sign In</h1>
