@@ -12,6 +12,7 @@ import Login from "./Pages/login";
 function Home() {
   return (
     <>
+    <Navbar />
       <Herosection />
       <Heading />
       <Bentogrid />
@@ -27,12 +28,9 @@ function Home() {
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/video" element={<Video />} />
       </Routes>
     </Router>
   );
