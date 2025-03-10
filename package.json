@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "react-scripts start"
-
   },
   "dependencies": {
     "@fontsource/open-sans": "^5.2.5",

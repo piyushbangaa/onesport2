@@ -4,7 +4,6 @@ import React from 'react'
 const Herosection = () => {
   return (
     <div className="min-h-[645px] pt-52 ">
-
         <div className="text-6xl ml-42 mr-14">
               We make bookings easy, so you play more.
             No hassle, just the game you love. <br />

@@ -17,6 +17,7 @@ function App() {
      <Banner/>
      <Video/>
      <Features/>
+     <div className="border border-gray-900"></div>
      <Footer/>
     </>
   )
