@@ -7,7 +7,7 @@ import Banner from "./components/Banner";
 import Features from "./components/Features";
 import Video from "./components/Video";
 import Login from "./Pages/login";
-import TextHoverEffectDemo from "./components/TextHoverEffectDemo";
+import Footer from "./components/Footer";
 
 function Home() {
   return (
@@ -20,7 +20,7 @@ function Home() {
       <Video />
       <Features />
       <div className="border border-gray-900"></div>
-      <TextHoverEffectDemo/>
+      <Footer/>
     </>
   );
 }
