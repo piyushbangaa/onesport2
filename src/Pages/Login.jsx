@@ -56,7 +56,7 @@ const Login = () => {
 
         <p className="mt-8 text-center text-sm text-gray-400">
           Don't have an account?{' '}
-          <a href="/createaccount" className="text-white hover:underline">
+          <a href="/signup" className="text-white hover:underline">
             Sign Up
           </a>{' '}
           — it's free!

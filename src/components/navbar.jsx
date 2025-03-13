@@ -7,7 +7,7 @@ export default function Navbar() {
         <h1 className='mr-195'><a href="/pricing">Pricing</a></h1> 
         <div className="flex gap-6 mr-8">
             <a href="/login" >Login</a>
-            <a href="/contact" >Contact Us</a>
+            <a href="/signup" >Sign Up</a>
         </div>
       </nav>
     );

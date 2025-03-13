@@ -8,7 +8,7 @@ import Features from "./components/Features";
 import Video from "./components/Video";
 import Login from "./Pages/login";
 import Footer from "./components/Footer";
-import Pricing from "./Pages/Pricing";
+import Signup from "./Pages/Signup";
 
 function Home() {
   return (
@@ -32,7 +32,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
