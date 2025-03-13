@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Pricing = () => {
+const Features = () => {
   return (
     <div className='min-h-[550px] mt-15 ml-20 '>
 
@@ -29,4 +29,4 @@ const Pricing = () => {
   )
 }
 
-export default Pricing
+export default Features
