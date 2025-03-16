@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 const FeatureCard = ({ imageSrc, heading }) => {
   return (
     <Tilt
-      className="mt-20 w-[300px] h-[260px] bg-black border-2 rounded-lg shadow-xl ml-7 flex justify-center items-center relative"
+      className="mt-20 w-[300px] h-[260px] bg-black border rounded-lg shadow-xl ml-7 flex justify-center items-center relative"
       tiltMaxAngleX={15}
       tiltMaxAngleY={15}
       perspective={1000}
