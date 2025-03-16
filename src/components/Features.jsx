@@ -1,22 +1,23 @@
-import React from 'react';
-import Tilt from 'react-parallax-tilt';
+import React from "react";
+import Tilt from "react-parallax-tilt";
 
-const FeatureCard = ({ title, description }) => {
+const FeatureCard = ({ imageSrc }) => {
   return (
     <Tilt
-      className="mt-20 w-[300px] h-[260px] bg-black border-2 p-6 rounded-lg shadow-xl ml-7"
-      tiltMaxAngleX={20}
-      tiltMaxAngleY={20}
+      className="mt-20 w-[300px] h-[260px] bg-black border-2 rounded-lg shadow-xl ml-7 flex justify-center items-center"
+      tiltMaxAngleX={15}
+      tiltMaxAngleY={15}
       perspective={1000}
       glareEnable={true}
-      glareMaxOpacity={0.3}
+      glareMaxOpacity={0.2}
       scale={1.05}
       transitionSpeed={500}
     >
-      <div className="text-center">
-        <h1 className="font-bold text-3xl">{title}</h1>
-        <p className="mt-4 font-semibold">{description}</p>
-      </div>
+      <img
+        src={imageSrc}
+        alt="Feature"
+        className="w-full h-full object-cover rounded-md"
+      />
     </Tilt>
   );
 };
@@ -24,22 +25,13 @@ const FeatureCard = ({ title, description }) => {
 const Features = () => {
   return (
     <div className="min-h-[550px] mt-20 ml-20">
-      <h1 className="text-5xl ml-15 font-bold">
-      Trusted by athletes, teams, and sports enthusiasts for seamless turf and <br /> field bookings
+      <h1 className="text-5xl font-bold">
+        Trusted by athletes, teams, and sports enthusiasts for seamless turf and <br /> field bookings
       </h1>
       <div className="flex flex-col md:flex-row gap-12">
-        <FeatureCard
-          title="99.99% Booking Uptime"
-          description="Ensuring uninterrupted access to sports fields across schools & colleges, even during peak hours."
-        />
-        <FeatureCard
-          title="86% faster reservations"
-          description="Our platform streamlines the booking process, making it 86% faster than traditional methods."
-        />
-        <FeatureCard
-          title="70% Peak-Hour Availability"
-          description="70% of users successfully secure their preferred slots, even during high-demand periods."
-        />
+        <FeatureCard imageSrc="https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <FeatureCard imageSrc="https://images.unsplash.com/photo-1602357280104-742c517a1d82?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFza2V0YmFsbCUyMGNvdXJ0fGVufDB8fDB8fHww" />
+        <FeatureCard imageSrc="/images/peak-hour.jpg" />
       </div>
     </div>
   );
