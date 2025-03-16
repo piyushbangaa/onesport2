@@ -10,17 +10,30 @@ const Pricing = () => {
           <div className="grid grid-cols-2 w-full h-full">
 
             {/* Left Section */}
-            <div className="flex justify-center mt-5">
+            <div className="flex flex-col items-center text-center mt-5">
               <h1 className='text-xl font-semibold'>Practice</h1>
+              <h1>₹0/month</h1>
+              <ul>
+                <li>Book up to 12 hours in advance</li>
+                <li>No booking discounts</li>
+                <li>Reschedule 2 times/month</li>
+                <li>Standard check-in process</li>
+              </ul>
              
               
-              
-
             </div>
 
             {/* Right Section */}
-            <div className="flex justify-center mt-5 ">
+            <div className="flex flex-col items-center text-center mt-5">
               <h1 className='text-xl font-semibold'>ProPlay</h1>
+              <h1>₹299/month</h1>
+              <ul>
+                <li>Priority booking (5 days early)</li>
+                <li>0% booking discount</li>
+                <li>Unlimited reschedules</li>
+                <li>Express check-in with QR code</li>
+              </ul>
+             
 
             </div>
 
