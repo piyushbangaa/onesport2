@@ -19,7 +19,7 @@ const FeatureCard = ({ imageSrc, heading }) => {
         className="w-full h-full object-cover rounded-md"
       />
       <div className="absolute bottom-18 left-0 right-0 p-3  bg-opacity-50">
-        <h3 className="text-white text-3xl font-bold text-center opacity-80">{heading}</h3>
+        <h3 className="text-white text-3xl font-bold text-center opacity-90">{heading}</h3>
       </div>
     </Tilt>
   );
