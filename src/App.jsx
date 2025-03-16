@@ -9,6 +9,7 @@ import Video from "./components/Video";
 import Login from "./Pages/login";
 import Footer from "./components/Footer";
 import Signup from "./Pages/Signup";
+import Pricing from "./Pages/Pricing";
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </Router>
   );
