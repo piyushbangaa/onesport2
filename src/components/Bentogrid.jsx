@@ -13,7 +13,7 @@ const Grid = () => {
           { title: "6. Enjoy the Game", desc: "Use the booked field for the reserved time.", span: "col-span-2 row-span-1" },
         ].map((step, index) => (
           <div key={index} className={`p-4 border-2 border-gray-800 rounded-lg shadow-md transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg ${step.span}`}>
-            <h2 className="text-2xl font-semibold  opacity-90">{step.title}</h2>
+            <h2 className="text-2xl font-semibold opacity-90">{step.title}</h2>
             <br />
             <p className="text-white opacity-80">{step.desc}</p>
           </div>
