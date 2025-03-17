@@ -11,9 +11,9 @@ const Pricing = () => {
 
             {/* Left Section */}
             <div className="flex flex-col items-center text-center mt-5">
-              <h1 className='text-xl'>Practice</h1>
+              <h1 className='text-xl opacity-70 '>Practice</h1>
               <h1 className='text-6xl mt-3 font-semibold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent'>₹0<span className="text-gray-400 text-xl font-light ">/month</span></h1>
-              <ul className='mt-5 text-lg text-left space-y-3'>
+              <ul className='mt-5 text-lg text-left space-y-3 opacity-70'>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11" stroke="white" fill="none" strokeWidth="1.5"/>
@@ -48,9 +48,9 @@ const Pricing = () => {
 
             {/* Right Section */}
             <div className="flex flex-col items-center text-center mt-5">
-              <h1 className='text-xl'>ProPlay</h1>
+              <h1 className='text-xl opacity-70'>ProPlay</h1>
               <h1 className='text-6xl mt-3 font-semibold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent'>₹299<span className="text-gray-400 text-xl font-light ">/month</span></h1>
-              <ul className='mt-5 text-lg text-left space-y-3'>
+              <ul className='mt-5 text-lg text-left space-y-3 opacity-70'>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11" stroke="white" fill="none" strokeWidth="1.5"/>
