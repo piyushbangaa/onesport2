@@ -12,7 +12,7 @@ const steps = [
 
 const Grid = () => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center px-10 pb-20 bg-black">
+    <div className="min-h-screen w-full flex items-center justify-center px-10 pb-5 mt-1 bg-black ">
       <div className="grid grid-cols-3 grid-rows-2 gap-6 w-full max-w-6xl p-8">
         {steps.map((step, index) => (
           <div 
