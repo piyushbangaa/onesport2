@@ -6,7 +6,7 @@ import Bentogrid from "./components/Bentogrid";
 import Banner from "./components/Banner";
 import Features from "./components/Features";
 import Video from "./components/Video";
-import Login from "./Pages/Login";
+import Login from "./Pages/login";
 import Footer from "./components/Footer";
 import Signup from "./Pages/Signup";
 import Pricing from "./Pages/Pricing";

@@ -22,6 +22,7 @@
     "react-icons": "^5.5.0",
     "react-parallax-tilt": "^1.7.286",
     "react-router-dom": "^7.3.0",
+    "react-youtube": "^10.1.0",
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
