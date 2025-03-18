@@ -9,6 +9,7 @@ const Herosection = () => {
             No hassle, just the game you love. <br />
             From turfs to courts, we’ve got you covered.   
         </div>
+        <a className="ml-230 border border-white rounded-[6px] py-3 px-6"href="/booking">Book Now</a>
     
     </div>
   )
