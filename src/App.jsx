@@ -10,7 +10,7 @@ import Login from "./Pages/login";
 import Footer from "./components/Footer";
 import Signup from "./Pages/Signup";
 import Pricing from "./Pages/Pricing";
-import Booking from "./components/Booking";
+import Booking from "./Pages/Booking";
 
 function Home() {
   return (
