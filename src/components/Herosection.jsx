@@ -14,5 +14,4 @@ const Herosection = () => {
     </div>
   )
 }
-
 export default Herosection
