@@ -16,22 +16,33 @@ const Booking = () => {
   const circleStart = Math.max(0, scrollY - 100);
   const circleSize = Math.min(2000, circleStart * 5);
 
-  // Text movement stops when scrollY >= 100px
-  const textMove = scrollY < 100 ? `translateX(calc(-10vw - ${scrollY}px))` : `translateX(calc(-10vw - 100px))`;
+  // Stop text movement when scrollY >= 100px
+  const textMove =
+    scrollY < 100
+      ? `translateX(calc(-10vw - ${scrollY}px))`
+      : `translateX(calc(-10vw - 100px))`;
 
-  // Change text color when inside the circle (fades from black to white)
-  const textColor = scrollY > 100 ? "white" : "black";
+  // When to release the text into normal scrolling
+  const releaseScroll = 450;
+  const isFixed = scrollY < releaseScroll;
+
+  // 🔥 Fix: Move text **UP** instead of **down**
+  const smoothTop = isFixed
+    ? "39vh"
+    : `${39 - (scrollY - releaseScroll) * 0.1}vh`; // Decreasing value makes it move up
 
   return (
-    <div className="relative w-screen min-h-[200vh] bg-black">
-      {/* Moving Text (Stops at 100px scroll, stays visible) */}
+    <div className="relative w-screen min-h-[300vh] bg-black">
+      {/* Moving Text (Stops moving at 100px, smoothly transitions to scroll UP) */}
       <div
-        className="text-9xl font-bold whitespace-nowrap fixed top-[39vh] left-0 w-full z-20"
+        className="text-9xl font-bold whitespace-nowrap w-full z-20 fixed left-0"
         style={{
+          top: smoothTop, // 🔥 Now moves UP smoothly
           transform: textMove,
-          color: textColor,
           WebkitTextStroke: "2px white",
-          mixBlendMode: "difference", // Keeps contrast inside the circle
+          color: "transparent",
+          mixBlendMode: "difference",
+          transition: isFixed ? "none" : "top 0.1s linear",
         }}
       >
         Book now Book now Book now Book now Book now Book now Book now Book now
@@ -46,6 +57,9 @@ const Booking = () => {
           transition: "width 0.1s linear, height 0.1s linear",
         }}
       ></div>
+
+      {/* Extra space so text remains visible */}
+      <div className="h-[200vh]"></div>
     </div>
   );
 };
