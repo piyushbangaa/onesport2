@@ -12,7 +12,8 @@ const Video = () => {
         playsInline
         onError={(e) => console.error("Video failed to load", e)}
       >
-        <source src="public/video.mp4" type="video/mp4" />
+<source src="/video.mp4" type="video/mp4" />
+
         Your browser does not support the video tag.
       </video>
 
