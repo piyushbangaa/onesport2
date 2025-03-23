@@ -50,7 +50,7 @@ const Booking = () => {
 
       {/* Expanding Circle (Above background, below text) */}
       <div
-        className="fixed top-1/2 left-1/2 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
+        className="fixed top-1/2 left-1/2 bg-gray-800 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
         style={{
           width: `${circleSize}px`,
           height: `${circleSize}px`,
