@@ -68,7 +68,7 @@ const Booking = () => {
 
       {/* Circle Text (always there but only visible when circle expands) */}
       <div
-        className="mt-30 text-6xl font-bold text-white text-center w-full fixed left-0 z-15"
+        className="mt-30 text-6xl font-bold text-black text-center w-full fixed left-0 z-15"
         style={{
           top: circleTextTop,
           opacity: textVisibility,
