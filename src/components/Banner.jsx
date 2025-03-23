@@ -11,7 +11,7 @@ const Banner = () => {
 
 <div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-start justify-center text-white text-[20rem] font-bold pt-54 ">a</div>
 
-<div className="w-1/10 bg- [rgb(255,87,65)] border border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">f</div>
+<div className="w-1/10 bg-[rgb(255,87,65)] border border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">f</div>
 <div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">i</div>
 <div className="w-1/10 bg-[rgb(255,87,65)] border border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">e</div>
 <div className="w-1/10 bg-[rgb(255,87,65)] border-0.5 border-black flex items-center justify-center text-white text-[20rem] font-bold pb-32">l</div>

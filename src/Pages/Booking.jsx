@@ -31,8 +31,16 @@ const Booking = () => {
     ? "39vh"
     : `${39 - (scrollY - releaseScroll) * 0.1}vh`; // Decreasing value makes it move up
 
+  // Circle text positioning - positioned below the "Book now" text
+  const circleTextTop = isFixed
+    ? "55vh"
+    : `${55 - (scrollY - releaseScroll) * 0.1}vh`;
+
+  // Only reveal the text when circle is large enough
+  const textVisibility = circleSize > 1000 ? 1 : 0;
+
   return (
-    <div className="relative w-screen min-h-[300vh] bg-black">
+    <div className="relative w-screen min-h-[300vh] bg-black overflow-hidden">
       {/* Moving Text (Stops moving at 100px, smoothly transitions to scroll UP) */}
       <div
         className="text-9xl font-bold whitespace-nowrap w-full z-20 fixed left-0"
@@ -50,7 +58,7 @@ const Booking = () => {
 
       {/* Expanding Circle (Above background, below text) */}
       <div
-        className="fixed top-1/2 left-1/2 bg-gray-800 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
+        className="fixed top-1/2 left-1/2 bg-pink-300 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
         style={{
           width: `${circleSize}px`,
           height: `${circleSize}px`,
@@ -58,8 +66,21 @@ const Booking = () => {
         }}
       ></div>
 
+      {/* Circle Text (always there but only visible when circle expands) */}
+      <div
+        className="mt-30 text-6xl font-bold text-white text-center w-full fixed left-0 z-15"
+        style={{
+          top: circleTextTop,
+          opacity: textVisibility,
+          visibility: textVisibility === 0 ? "hidden" : "visible", // Use visibility instead of display
+          transition: "opacity 0.2s ease, top 0.1s linear",
+        }}
+      >
+        Seamlessly book sports turfs and <br />fields online—play anytime, <br />anywhere, with zero hassle <br />and effort!
+      </div>
+
       {/* Extra space so text remains visible */}
-      <div className="h-[200vh]"></div>
+      <div className="h-[200vh]"> </div>
     </div>
   );
 };
