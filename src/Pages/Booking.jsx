@@ -20,7 +20,7 @@ const Booking = () => {
   const textMove =
     scrollY < 100
       ? `translateX(calc(-10vw - ${scrollY}px))`
-      : `translateX(calc(-10vw - 100px))`;
+      : `translateX(calc(-10.4vw - 100px))`;
 
   // When to release the text into normal scrolling
   const releaseScroll = 450;
@@ -59,7 +59,7 @@ const Booking = () => {
 
       {/* Expanding Circle (Above background, below text) */}
       <div
-        className="fixed top-1/2 left-1/2 bg-pink-300 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
+        className="fixed top-1/2 left-1/2 bg-gray-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
         style={{
           width: `${circleSize}px`,
           height: `${circleSize}px`,
