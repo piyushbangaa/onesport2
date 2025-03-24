@@ -78,11 +78,11 @@ const Booking = () => {
         }}
       >
         Seamlessly book sports turfs and <br />fields online—play anytime, <br />anywhere, with zero hassle <br />and effort!
-        <div className="mt-19 grid grid-cols-2 gap-4 h-120">
-       <div className="bg-red-200">hi</div>
-       <div className="bg-amber-200">hi</div>
-       <div className="bg-red-200">hi</div>
-       <div className="bg-amber-200">hi</div>
+      <div className="mt-19 grid grid-cols-2 gap-4 h-120 ml-5 mr-5">
+       <div className="border-2 border-black rounded-2xl">Football</div>
+       <div className="border-2 border-black rounded-2xl">Basketball</div>
+       <div className="border-2 border-black rounded-2xl">Cricket</div>
+       <div className="border-2 border-black rounded-2xl">Swimming</div>
       </div>
       </div>
 
