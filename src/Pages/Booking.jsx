@@ -37,7 +37,8 @@ const Booking = () => {
     : `${55 - (scrollY - releaseScroll) * 0.1}vh`;
 
   // Only reveal the text when circle is large enough
-  const textVisibility = circleSize > 1000 ? 1 : 0;
+  const textVisibility = Math.min(1, (circleSize - 500) / 500);
+
 
   return (
     <div className="relative w-screen min-h-[300vh] bg-black overflow-hidden">
