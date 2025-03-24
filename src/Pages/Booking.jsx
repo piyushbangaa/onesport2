@@ -59,7 +59,7 @@ const Booking = () => {
 
       {/* Expanding Circle (Above background, below text) */}
       <div
-        className="fixed top-1/2 left-1/2 bg-gray-700 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
+        className="fixed top-1/2 left-1/2 bg-gray-600 rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
         style={{
           width: `${circleSize}px`,
           height: `${circleSize}px`,
@@ -78,6 +78,12 @@ const Booking = () => {
         }}
       >
         Seamlessly book sports turfs and <br />fields online—play anytime, <br />anywhere, with zero hassle <br />and effort!
+        <div className="mt-19 grid grid-cols-2 gap-4 h-120">
+       <div className="bg-red-200">hi</div>
+       <div className="bg-amber-200">hi</div>
+       <div className="bg-red-200">hi</div>
+       <div className="bg-amber-200">hi</div>
+      </div>
       </div>
 
       {/* Extra space so text remains visible */}
