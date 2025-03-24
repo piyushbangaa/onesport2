@@ -72,33 +72,49 @@ const Booking = () => {
         Seamlessly book sports turfs and <br />fields online—play anytime, <br />anywhere, with zero hassle <br />and effort!
         
         <div className="mt-19 grid grid-cols-2 gap-4 ml-5 mr-5">
-  <div className="border-2 border-black rounded-2xl flex flex-col items-center justify-center h-60 w-full overflow-hidden">
-    <img 
-      src="https://images.unsplash.com/photo-1510526292299-20af3f62d453?q=80&w=2628&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-      alt="Football" 
-    />
-    
-  </div>
-  <div className="border-2 border-black rounded-2xl flex flex-col items-center justify-center h-60 w-full overflow-hidden">
-    <img 
-      src="https://plus.unsplash.com/premium_photo-1663953003868-3dc5525a1708?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-      alt="Basketball" 
-    />
-   
-  </div>
-  <div className="border-2 border-black rounded-2xl flex flex-col items-center justify-center h-60 w-full overflow-hidden">
-    <img 
-      src="https://images.unsplash.com/photo-1563184956-7a02a2852738?q=80&w=2697&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-      alt="Cricket" 
-    />
-   
-  </div>
-  <div className="border-2 border-black rounded-2xl flex flex-col items-center justify-center h-60 w-full overflow-hidden">
-    <img 
-      src="https://images.unsplash.com/photo-1617696618050-b0fef0c666af?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-      alt="Swimming" 
-    />
-  </div>
+       <div className="border-2 border-black rounded-2xl relative h-60 w-full overflow-hidden">
+       <img 
+       src="https://images.unsplash.com/photo-1510526292299-20af3f62d453?q=80&w=2628&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+       alt="Football" 
+       className="w-full h-full object-cover"
+      />
+     <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold bg-opacity-50">
+    Football
+     </h2>
+    </div>
+    <div className="border-2 border-black rounded-2xl relative h-60 w-full overflow-hidden">
+  <img 
+    src="https://plus.unsplash.com/premium_photo-1663953003868-3dc5525a1708?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    alt="Basketball" 
+    className="w-full h-full object-cover"
+  />
+  <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold  bg-opacity-50  ">
+    Basketball
+  </h2>
+</div>
+
+<div className="border-2 border-black rounded-2xl relative h-60 w-full overflow-hidden">
+  <img 
+    src="https://images.unsplash.com/photo-1563184956-7a02a2852738?q=80&w=2697&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    alt="Cricket" 
+    className="w-full h-full object-cover"
+  />
+  <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold  bg-opacity-50 rounded">
+    Cricket
+  </h2>
+</div>
+
+<div className="border-2 border-black rounded-2xl relative h-60 w-full overflow-hidden">
+  <img 
+    src="https://images.unsplash.com/photo-1617696618050-b0fef0c666af?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    alt="Swimming" 
+    className="w-full h-full object-cover"
+  />
+  <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold  bg-opacity-50 rounded">
+    Badminton
+  </h2>
+</div>
+
 </div>
 
 
