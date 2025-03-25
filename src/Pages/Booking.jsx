@@ -35,7 +35,7 @@ const Booking = () => {
 
 
   return (
-    <div className="relative w-screen min-h-[300vh] bg-white overflow-hidden">
+    <div className="relative w-screen min-h-[300vh] bg-[rgb(226,230,225)] overflow-hidden">
       <div
         className="text-9xl font-bold whitespace-nowrap w-full z-20 fixed left-0"
         style={{
@@ -61,7 +61,7 @@ const Booking = () => {
       ></div>
 
       <div
-        className="mt-30 text-6xl font-bold text-white text-center w-full fixed left-0 z-15"
+        className="mt-30 text-6xl font-bold text-[rgb(226,230,225)] text-center w-full fixed left-0 z-15"
         style={{
           top: circleTextTop,
           opacity: textVisibility,
