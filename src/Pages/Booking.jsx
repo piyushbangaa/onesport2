@@ -79,7 +79,7 @@ const Booking = () => {
        className="w-full h-full object-cover"
       />
       <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">Football</h2>
-      <a href="" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 border border-amber-50 rounded-2xl text-xl text-white mt-5 w-34">Book a Slot</a>
+      <a href="/field" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 border border-amber-50 rounded-2xl text-xl text-white mt-5 w-34">Book a Slot</a>
     </div>
     
     <div className="border-2 border-black rounded-2xl relative h-60 w-full overflow-hidden">

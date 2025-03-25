@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Signup from "./Pages/Signup";
 import Pricing from "./Pages/Pricing";
 import Booking from "./Pages/Booking";
+import Field from "./Pages/field";
+
 
 function Home() {
   return (
@@ -37,6 +39,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/booking" element={<Booking />} />
+        <Route path="/field" element={<Field />} />
       </Routes>
     </Router>
   );
