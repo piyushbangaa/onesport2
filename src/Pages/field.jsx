@@ -9,36 +9,34 @@ const Field = () => {
     { name: "DPS", image: "https://content.jdmagicbox.com/comp/delhi/83/011p57383/catalogue/delhi-public-school-mathura-road-delhi-schools-39f81.jpg", mapLink: "https://www.google.com/maps?sca_esv=afb5579b9aac608a&sxsrf=AHTn8zp_Pvs7ZUbKHYjIGtVQVDsgId-t8w:1742907421766&fbs=ABzOT_BX-QpElnhr0uK0BVtuIT4CMWc74XQWG4wtYyJsj2uapSyHfQ6RuGFbyT2MO76VMcUEOwTCVEcAG2OuP_cGoP5sEF4b4NhI3Wgj9vt8sNByrr3myPsasZaii30wd4PgYJf3z8gXsr-_ZqHvAE4uKp0nPpkXpyEAxSqnLWMXknEh1jBizSx9CCTM3K5TstsijDwv_gj3IsIJV1BrpPoHO0DKXjVK0mLO-PDWZn8X149LdunZdSQ&biw=1280&bih=712&dpr=2&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KUklEgLg4gw5MWIFO7-LYQaG&daddr=130,+Mathura+Rd,+National+Zoological+Park,+Sundar+Nagar,+New+Delhi,+Delhi+110003" },
     { name: "St.Columba's School", image: "https://media.licdn.com/dms/image/v2/C511BAQEuSTYnUSnOQg/company-background_10000/company-background_10000/0/1584229044440/st_columbas_school_scs_cover?e=2147483647&v=beta&t=ZWbC3RxFywsOzgKBIUEZBfjCvBn3wDkFRZcD0Nhu32Y", mapLink: "https://www.google.com/maps?sca_esv=afb5579b9aac608a&sxsrf=AHTn8zrcZYr_Wl0ehOCSUHCOxIdeLzjx_Q:1742907613273&fbs=ABzOT_BX-QpElnhr0uK0BVtuIT4CMWc74XQWG4wtYyJsj2uapSyHfQ6RuGFbyT2MO76VMcUEOwTCVEcAG2OuP_cGoP5sEF4b4NhI3Wgj9vt8sNByrr3myPsasZaii30wd4PgYJf3z8gXsr-_ZqHvAE4uKp0nPpkXpyEAxSqnLWMXknEh1jBizSx9CCTM3K5TstsijDwv_gj3IsIJV1BrpPoHO0DKXjVK0mLO-PDWZn8X149LdunZdSQ&biw=1280&bih=712&dpr=2&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KZPFEtxR_Qw5MUoWvisqDaYP&daddr=No.+1,+Ashok+Place,+Bhai+Vir+Singh+Marg,+Near+Gole+Dakhana,+Gole+Market,+New+Delhi,+Delhi+110001" },
     { name: "British School", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHkgIM3J_K9VQiJbJaCptGYE8piG-Zcz3tA&s", mapLink: "https://www.google.com/maps?sca_esv=afb5579b9aac608a&sxsrf=AHTn8zrISPVDos-CFIBLLS27MK9mraO9Dw:1742907749256&fbs=ABzOT_BF2BQKolEz0Jz2KKb_4ZjDZ8R99aiy1vHXPUvKlMD_owXJuSJp1BvNBFRzUG6jPnRrjG8z2e8BUNGD66KSo9F56VJfpz7tXYZ-0_wIScQA99T_PxDW0npzuhtZIbU5avNEknL0fkSPRklfZBniECgsqLb9wdZGDSuZbYEGNvup8G8tZ4xAbK8o5ahfrI-pXjqqzkwck6RtHjt-SN63EXyYpnZLaGNb693vFlFb6Od-PHwPbl4&biw=1280&bih=712&dpr=2&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KetCmYdCHQ05MYmX39jVo2BY&daddr=Dr+Jose+P+Rizal+Marg,+Chanakyapuri,+New+Delhi,+Delhi+110021" },
-    { name: "Venkateshwar Global School", image: "https://images.uniapply.com/uploads/college/image/500/2180/webp/Venkateshwar_Global_School_1555_Building_1.webp", mapLink: "https://www.google.com/maps?sca_esv=afb5579b9aac608a&sxsrf=AHTn8zr9V7zF2esGtLSOcArBzazolM-c9w:1742926839122&fbs=ABzOT_DnPN66xNYYiVBYF80MNa9-WXlx6-Gn4F9E0LjJnsdErVa_gKhDHt_BGWn3bS5PySMq888m6Gf-C7gV9pa3nPTuli0CjSV-Xla8nzl3H27oDYS-KnR-Gj2UNE7cXbvO74iDE4crrxdCgYxiomJSRkxZCD7F1bv453EZWPSBf0dHLSAWKOmMjPK8-jMMy_9bmLEs6hRQueWch3ljmvqi-CZBbkChmO6-hFe82DjLfO3068iWnoM&biw=1280&bih=712&dpr=2&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=Kdnj6RpmAQ05MXfWNGmvH8RJ&daddr=Ekta+Apartment,+Rohini+Sector+13,+Pocket+23,+Sector+13,+Rohini,+Delhi,+110085" },
+    { name: "Venkateshwar School", image: "https://images.uniapply.com/uploads/college/image/500/2180/webp/Venkateshwar_Global_School_1555_Building_1.webp", mapLink: "https://www.google.com/maps?sca_esv=afb5579b9aac608a&sxsrf=AHTn8zr9V7zF2esGtLSOcArBzazolM-c9w:1742926839122&fbs=ABzOT_DnPN66xNYYiVBYF80MNa9-WXlx6-Gn4F9E0LjJnsdErVa_gKhDHt_BGWn3bS5PySMq888m6Gf-C7gV9pa3nPTuli0CjSV-Xla8nzl3H27oDYS-KnR-Gj2UNE7cXbvO74iDE4crrxdCgYxiomJSRkxZCD7F1bv453EZWPSBf0dHLSAWKOmMjPK8-jMMy_9bmLEs6hRQueWch3ljmvqi-CZBbkChmO6-hFe82DjLfO3068iWnoM&biw=1280&bih=712&dpr=2&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=Kdnj6RpmAQ05MXfWNGmvH8RJ&daddr=Ekta+Apartment,+Rohini+Sector+13,+Pocket+23,+Sector+13,+Rohini,+Delhi,+110085" },
   ]; 
 
   return (
     <div>
-        <div className="grid grid-cols-4 grid-rows-2 gap-4 mt-6">
+        <div className="grid grid-cols-4 grid-rows-2 gap-3 mt-16 w-290 ml-15">
           {schools.map((school, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-xl border border-amber-50 h-80 flex flex-col justify-between"
-               >
-             
+              className="overflow-hidden rounded-[9px] border border-gray-800 h-72 flex flex-col justify-between"
+             >
+            
               <img
-                src={school.image}
-                alt={school.name}
-                className="w-full h-2/3 object-cover rounded-t-xl"
+                 src={school.image}
+                 alt={school.name}
+                 className="w-full h-2/3 object-cover "
               />
               
             
-              <div className="text-center text-white font-semibold p-2 bg-gray-800">
-                {school.name}
+              <div className="text-center text-white font-semibold p-2 text-xl">
+                 {school.name}
               </div>
 
-              <div className="flex justify-around p-2 bg-gray-900 rounded-b-xl">
+              <div className="flex items-center justify-center pb-2 rounded-xl gap-3 ">
                 <a
                   href={school.mapLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-center"
-                >
+                  >
                   Directions
                 </a>
                 <button className="px-3 py-1 bg-green-500 text-white rounded-md hover:bg-green-600">
