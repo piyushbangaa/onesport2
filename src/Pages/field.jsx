@@ -19,7 +19,7 @@ const Field = () => {
             <div
               key={index}
               className="overflow-hidden rounded-xl border border-amber-50 h-80 flex flex-col justify-between"
-            >
+               >
              
               <img
                 src={school.image}
@@ -32,7 +32,6 @@ const Field = () => {
                 {school.name}
               </div>
 
-              /* Buttons */
               <div className="flex justify-around p-2 bg-gray-900 rounded-b-xl">
                 <a
                   href={school.mapLink}
