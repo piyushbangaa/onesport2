@@ -34,9 +34,22 @@ const Booking = () => {
   const textVisibility = Math.min(1, (circleSize - 500) / 500);
 
   return (
+  
 
     
     <div className="relative w-screen min-h-[310vh] bg-[rgb(226,230,225)] overflow-hidden">
+      <div
+  className="text-4xl font-semibold w-full z-20 fixed left-0 text-center -mt-50"
+  style={{
+    top: `calc(39vh + 50px)`, 
+    WebkitTextStroke: "2px black",
+    opacity: Math.max(0, 1 - (circleSize - 300) / 500), // Fades out as the circle expands
+    visibility: circleSize > 800 ? "hidden" : "visible", // Hides it completely when the circle is large
+    transition: "opacity 0.2s ease",
+  }}
+>
+  Scroll to book
+</div>
       <div
         className="text-9xl font-bold whitespace-nowrap w-full z-20 fixed left-0"
         style={{
@@ -50,6 +63,7 @@ const Booking = () => {
       >
         Book now Book now Book now Book now Book now Book now Book now Book now
       </div>
+
 
       <div
         className="fixed top-1/2 left-1/2 bg-black rounded-full -translate-x-1/2 -translate-y-1/2 z-10"
@@ -69,7 +83,7 @@ const Booking = () => {
           transition: "opacity 0.2s ease, top 0.1s linear",
         }}
       >
-        Seamlessly book sports turfs and <br />fields online—play anytime, <br />anywhere, with zero hassle <br />and effort!
+       Pick your sport, book your slot, <br /> and play hassle-free!
         
         <div className="mt-19 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 px-5">
           {[
