@@ -15,8 +15,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black">
-      <div className="p-6 w-96 bg-black rounded-xl border border-gray-800 shadow-lg">
+    <div className="min-h-screen flex items-center justify-center bg-black px-4">
+      <div className="p-6 w-96 max-w-sm sm:max-w-md bg-black rounded-xl border border-gray-800 shadow-lg">
         <div className="text-center text-white">
           <h1 className="mt-4 text-3xl font-semibold">Sign Up</h1>
           <p className="mt-2 text-gray-400">Join us by creating an account below.</p>
@@ -30,7 +30,7 @@ const Signup = () => {
             onChange={(e) => setName(e.target.value)}
             className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
           />
-          
+
           <input
             type="email"
             placeholder="Email"
@@ -38,7 +38,7 @@ const Signup = () => {
             onChange={(e) => setEmail(e.target.value)}
             className="mt-4 w-full h-10 bg-black text-white border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
           />
-          
+
           <input
             type="password"
             placeholder="Password"

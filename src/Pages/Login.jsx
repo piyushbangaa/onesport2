@@ -10,25 +10,24 @@ const Login = () => {
       alert("Please fill in both fields!");
       return;
     }
-  
     console.log("Email:", email, "Password:", password);
   };
 
   return (
-    <div className="mt-33 flex items-center justify-center bg-black ">
-      <div className="p-8 w-95 max-w-md bg-black rounded-xl border border-gray-800 shadow-lg">
-        <div className="text-center text-white">
-          <h1 className="mt-4 text-3xl font-semibold">Sign In</h1>
+    <div className="flex items-center justify-center min-h-screen bg-black px-4">
+      <div className="p-8 w-95 max-w-md bg-black rounded-xl border border-gray-800 shadow-lg text-white">
+        <div className="text-center">
+          <h1 className="text-3xl font-semibold mt-4">Sign In</h1>
           <p className="mt-2 text-sm text-gray-400">Enter your email and password to login</p>
         </div>
 
-        <form onSubmit={handleSignIn} className="mt-8">
+        <form onSubmit={handleSignIn} className="mt-6 space-y-4">
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
+            className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
           />
           
           <input
@@ -36,25 +35,25 @@ const Login = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="mt-4 w-full h-10 bg-black text-white border border-gray-700 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
+            className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
           />
 
           <button
             type="submit"
-            className="mt-6 w-full h-10 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+            className="w-full h-10 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
           >
             Sign In
           </button>
 
           <button
             type="button"
-            className="mt-4 w-full h-10 bg-transparent text-white border border-white font-semibold rounded-lg hover:bg-gray-900 transition-all duration-300 flex items-center justify-center gap-2"
+            className="w-full h-10 bg-gray-900 text-white border border-white font-semibold rounded-lg hover:bg-gray-800 transition-all duration-300 flex items-center justify-center gap-2"
           >
             Sign In with Google
           </button>
         </form>
 
-        <p className="mt-8 text-center text-sm text-gray-400">
+        <p className="mt-6 text-center text-sm text-gray-400 pb-4">
           Don't have an account?{' '}
           <a href="/signup" className="text-white hover:underline">
             Sign Up

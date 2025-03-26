@@ -1,11 +1,10 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 
-
 const FeatureCard = ({ imageSrc, heading }) => {
   return (
     <Tilt
-      className="mt-20 w-[300px] h-[260px] bg-black border rounded-lg shadow-xl ml-7 flex justify-center items-center relative"
+      className="mt-13 w-full sm:w-[300px] h-[260px] bg-black border rounded-lg shadow-xl sm:ml-7 flex justify-center items-center relative"
       tiltMaxAngleX={15}
       tiltMaxAngleY={15}
       perspective={1000}
@@ -19,7 +18,7 @@ const FeatureCard = ({ imageSrc, heading }) => {
         alt="Feature"
         className="w-full h-full object-cover rounded-md"
       />
-      <div className="absolute bottom-19 left-0 right-0 p-3  bg-opacity-50">
+      <div className="absolute bottom-19 left-0 right-0 p-3 bg-opacity-50">
         <h3 className="text-white text-3xl font-bold text-center opacity-90">{heading}</h3>
       </div>
     </Tilt>
@@ -28,11 +27,11 @@ const FeatureCard = ({ imageSrc, heading }) => {
 
 const Features = () => {
   return (
-    <div className="min-h-[550px] mt-20 ml-20">
-      <h1 className="text-5xl font-bold">
+    <div className="min-h-[550px] mt-20 px-4 sm:ml-20">
+      <h1 className="text-5xl font-bold mb-10">
         Trusted by athletes, teams, and sports enthusiasts for seamless turf and <br /> field bookings
       </h1>
-      <div className="flex flex-col md:flex-row gap-12">
+      <div className="flex flex-col sm:flex-row gap-12">
         <FeatureCard 
           imageSrc="https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
           heading="99.99% Booking Uptime" 
