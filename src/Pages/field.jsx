@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar";
 
 const Field = () => { 
   const schools = [
@@ -14,47 +13,49 @@ const Field = () => {
   ]; 
 
   return (
-    <div>
-        <div className="grid grid-cols-4 grid-rows-2 gap-3 mt-16 w-290 ml-15">
-          {schools.map((school, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-[9px] border border-gray-800 h-72 flex flex-col justify-between"
-             >
+    <div className="px-4 sm:px-6 lg:px-8 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {schools.map((school, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-lg border border-gray-800 h-full flex flex-col hover:shadow-lg transition-shadow duration-300"
+          >
+            <img
+              src={school.image}
+              alt={school.name}
+              className="w-full h-45 object-cover"
+            />
             
-              <img
-                 src={school.image}
-                 alt={school.name}
-                 className="w-full h-45 object-cover "
-              />
-              
-            
-              <div className="text-center text-white font-semibold mt-1 text-xl opacity-80">
-                 {school.name}
+            <div className="p-4 flex flex-col flex-grow">
+              <div className="text-center text-white font-semibold text-xl mb-1">
+                {school.name}
               </div>
 
-              <div className="text-center text-white font-semibold -mt-2 text-2px opacity-80">
-                 {school.address}
+              <div className="text-center text-gray-300 -mt-2 text-sm mb-4">
+                {school.address}
               </div>
 
-
-              <div className="flex items-center justify-center pb-2 rounded-xl gap-3 ">
+              <div className="mt-auto flex justify-center gap-3">
                 <a
                   href={school.mapLink}
-                  className="px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-center"
-                  >
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm sm:text-base"
+                >
                   Directions
                 </a>
                 <a 
-                href={school.SlotLink}
-                className="px-3 py-1 bg-green-500 text-white rounded-md hover:bg-green-600">
+                  href={school.SlotLink}
+                  className="px-3 py-1 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors text-sm sm:text-base"
+                >
                   Book Now
                 </a>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+    </div>
   );
 };
 

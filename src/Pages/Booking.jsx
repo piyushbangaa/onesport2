@@ -34,7 +34,7 @@ const Booking = () => {
   const textVisibility = Math.min(1, (circleSize - 500) / 500);
 
   return (
-    <div className="relative w-screen min-h-[329vh] bg-[rgb(226,230,225)] overflow-hidden">
+    <div className="relative w-screen min-h-[310vh] bg-[rgb(226,230,225)] overflow-hidden">
       <div
         className="text-9xl font-bold whitespace-nowrap w-full z-20 fixed left-0"
         style={{
