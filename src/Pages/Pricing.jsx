@@ -1,7 +1,11 @@
 import React from 'react';
+import Navbar from '../components/navbar';
 
 const Pricing = () => {
   return (
+  <div>
+      <Navbar/>
+
     <div className="flex items-center justify-center min-h-screen">
       <div className="relative inline-flex h-98 w-170 overflow-hidden rounded-[20px] p-[1px]">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
@@ -89,6 +93,7 @@ const Pricing = () => {
           <div className="absolute left-1/2 top-0 h-full w-[1px] bg-gray-900 transform -translate-x-1/2"></div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
