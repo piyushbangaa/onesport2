@@ -12,6 +12,7 @@ import Signup from "./Pages/Signup";
 import Pricing from "./Pages/Pricing";
 import Booking from "./Pages/Booking";
 import Field from "./Pages/field";
+import Layout from "./Layout";
 
 
 function Home() {
@@ -37,9 +38,11 @@ function App() {
       <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route element={<Layout />}>
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/field" element={<Field />} />
+        </Route>
       </Routes>
     </Router>
   );
