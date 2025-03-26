@@ -7,58 +7,69 @@ const Login = () => {
   const handleSignIn = (e) => {
     e.preventDefault();
     if (!email || !password) {
-      alert("Please fill in both fields!");
+      alert('Please fill in both fields!');
       return;
     }
-    console.log("Email:", email, "Password:", password);
+    console.log('Email:', email, 'Password:', password);
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-black px-4">
-      <div className="p-8 w-95 max-w-md bg-black rounded-xl border border-gray-800 shadow-lg text-white">
-        <div className="text-center">
-          <h1 className="text-3xl font-semibold mt-4">Sign In</h1>
-          <p className="mt-2 text-sm text-gray-400">Enter your email and password to login</p>
+      <div className="p-8 w-96 bg-black rounded-xl border border-gray-800 shadow-lg text-white">
+        <h1 className="text-2xl font-semibold text-center">Sign In</h1>
+        <p className="mt-2 text-sm text-gray-400 text-center">Enter your details to access your account</p>
+
+        <div className="flex gap-3 mt-6">
+          <button className="flex items-center justify-center w-full h-10 bg-gray-900 text-white border border-gray-700 rounded-lg hover:bg-gray-800 transition-all">
+            <svg className="w-5 h-5" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+              <path d="M24 20v8.7h11.9c-.5 3-3.5 8.7-11.9 8.7-7.3 0-13.3-6-13.3-13.3s6-13.3 13.3-13.3c4 0 6.7 1.7 8.2 3.2l5.7-5.5C37.3 5 31.8 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c12.7 0 21.4-8.9 21.4-21.4 0-1.4-.2-2.6-.4-3.6H24z" />
+            </svg>
+            <span className="ml-2">Google</span>
+          </button>
         </div>
 
-        <form onSubmit={handleSignIn} className="mt-6 space-y-4">
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
-          />
-          
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300"
-          />
+        <div className="flex items-center my-6">
+          <div className="flex-grow border-t border-gray-700"></div>
+          <span className="text-gray-500 text-xs px-2">OR CONTINUE WITH</span>
+          <div className="flex-grow border-t border-gray-700"></div>
+        </div>
+
+        <form onSubmit={handleSignIn} className="space-y-4">
+          <div>
+            <label className="text-sm text-gray-400">Email</label>
+            <input
+              type="email"
+              placeholder="m@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg px-4 focus:outline-none focus:ring-1 focus:ring-white transition-all duration-300 mt-1"
+            />
+          </div>
+
+          <div>
+            <label className="text-sm text-gray-400">Password</label>
+            <input
+              type="password"
+              placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full h-10 bg-black text-white border border-gray-700 rounded-lg px-4 focus:outline-none focus:ring-1 focus:ring-white transition-all duration-300 mt-1"
+            />
+          </div>
 
           <button
             type="submit"
-            className="w-full h-10 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300"
+            className="w-full h-10 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 mt-2"
           >
             Sign In
           </button>
-
-          <button
-            type="button"
-            className="w-full h-10 bg-gray-900 text-white border border-white font-semibold rounded-lg hover:bg-gray-800 transition-all duration-300 flex items-center justify-center gap-2"
-          >
-            Sign In with Google
-          </button>
+          
         </form>
-
-        <p className="mt-6 text-center text-sm text-gray-400 pb-4">
+        <p className="mt-6 text-center text-sm text-gray-400 -pb-7">
           Don't have an account?{' '}
           <a href="/signup" className="text-white hover:underline">
             Sign Up
-          </a>{' '}
-          — it's free!
+          </a>
         </p>
       </div>
     </div>
