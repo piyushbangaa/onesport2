@@ -1,29 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+
 
 const Herosection = () => {
-  return (
-    <div className="min-h-[645px] pt-48 px-4 sm:px-0">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, ease: "easeOut" }}
-        className="text-4xl sm:text-6xl 2xl:text-7xl ml-[10%] sm:ml-42 sm:mr-14 2xl:ml-56 2xl:mr-20"
-      >
-        We make bookings easy, so you play more.
-        No hassle, just the game you love. <br />
-        From turfs to courts, we’ve got you covered.
-      </motion.div>
-
-      <motion.a
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, ease: "easeOut", delay: 0.4 }}
-        className="mt-6 sm:mt-10 ml-[25%] sm:ml-230 2xl:ml-[30%] border border-white rounded-[6px] py-3 px-6 inline-block"
-        href="/booking"
-      >
-        Book Now
-      </motion.a>
+  return ( 
+    <div className="min-h-[625px]" >
+      <div className="mt-29 min-h-[160px] text-center text-8xl font-semibold bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent">Your path to effortless <br /> sports bookings!</div>
+      <div className=" min-h-[120px] text-center mt-5 text-2xl opacity-60"> Easily find, book, and play on top sports turfs & fields without hassle, <br /> anytime, anywhere just focus on the game.</div>
+      <a className="border rounded-3xl px-7 py-4 ml-145 font-semibold bg-gradient-to-r from-white to-[#C8B5FF] text-black hover:text-gray-800" href="/booking">Book Now</a>
     </div>
   );
 };
