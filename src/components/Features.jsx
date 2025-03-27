@@ -42,7 +42,7 @@ const Features = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="min-h-[550px] mt-20 px-4 sm:ml-20"
     >
-      <h1 className="text-5xl font-bold mb-10">
+      <h1 className="text-5xl font-bold mb-10 ">
         Trusted by athletes, teams, and sports enthusiasts for seamless turf and <br /> field bookings
       </h1>
       <div className="flex flex-col sm:flex-row gap-12">
