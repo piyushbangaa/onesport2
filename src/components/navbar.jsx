@@ -1,20 +1,35 @@
-import React from 'react';
+import React from "react";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 px-6 sm:px-12">
-      {/* Logo */}
-      <h1 className="text-2xl sm:text-3xl font-bold">OneSport</h1>
-
-      {/* Pricing (Centered) */}
-      <h1 className="flex-1 ml-10">
-        <a href="/pricing" className="text-lg sm:text-xl">Pricing</a>
-      </h1>
-
-      {/* Right Section (Login) */}
-      <div className="flex gap-4 sm:gap-6">
-        <a href="/login" className="text-lg sm:text-xl">Login</a>
+    <>
+      {/* Logo (Top-Left) */}
+      <div className="top-5 left-5 mt-7 text-3xl ml-6">
+       OneSport
       </div>
-    </nav>
+
+      {/* Login Button (Top-Right) */}
+      <div className="absolute top-5 right-5 mt-3">
+        <a href="/login" className="bg-blue-500 text-white px-5 py-3 rounded-full shadow-md hover:bg-blue-600 transition">
+          Login
+        </a>
+      </div>
+
+      {/* Floating Navbar (Centered) */}
+      <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-black/30 backdrop-blur-xl shadow-lg px-6 py-3 rounded-full flex gap-24 items-center justify-center w-[500px] z-50 border border-white/20 ">
+        <a href="pricing" className="text-white font-semibold hover:text-blue-300 transition">
+          Pricing
+        </a>
+        <a href="#" className="text-white font-semibold hover:text-blue-300 transition">
+          workflow
+        </a>
+       
+        <a href="#" className="text-white font-semibold hover:text-blue-300 transition">
+          Features
+        </a>
+      </nav>
+    </>
   );
-}
+};
+
+export default Navbar;
