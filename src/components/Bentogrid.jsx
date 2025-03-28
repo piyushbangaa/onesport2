@@ -18,7 +18,7 @@ const Grid = () => {
             key={index} 
             className={`p-6 rounded-xl bg-black backdrop-blur-lg border border-white/20 shadow-lg transition-all duration-300 hover:scale-[1.05] hover:border-white/40 flex flex-col items-center text-center ${step.span || "col-span-1"}`}
           >
-            <div className="text-3xl sm:text-4xl text-[rgb(255,87,65)] mb-3">{step.icon}</div>
+            <div className="text-3xl sm:text-4xl text-blue-500 mb-3">{step.icon}</div>
             <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">{step.title}</h2>
             <p className="text-gray-300 text-sm sm:text-base">{step.desc}</p>
           </div>

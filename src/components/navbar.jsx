@@ -2,33 +2,29 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <>
-      {/* Logo (Top-Left) */}
-      <div className="top-5 left-5 mt-7 text-3xl ml-6">
-       OneSport
-      </div>
+    <header className="relative w-full px-6 py-4 flex items-center justify-between">
 
-      {/* Login Button (Top-Right) */}
-      <div className="absolute top-5 right-5 mt-3">
-        <a href="/login" className="bg-blue-500 text-white px-5 py-3 rounded-full shadow-md hover:bg-blue-600 transition">
-          Login
-        </a>
-      </div>
+      <div className="text-white text-2xl font-bold">OneSport</div>
 
-      {/* Floating Navbar (Centered) */}
-      <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-black/30 backdrop-blur-xl shadow-lg px-6 py-3 rounded-full flex gap-24 items-center justify-center w-[500px] z-50 border border-white/20 ">
+      <nav className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-black/30 backdrop-blur-xl shadow-lg px-6 py-3 rounded-full flex justify-center items-center gap-6 sm:gap-12 md:gap-16 lg:gap-20 w-[90%] sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px] 2xl:w-[800px] min-w-[300px] max-w-[90%] border border-white/20 lg:relative lg:top-0 lg:left-0 lg:translate-x-0">
         <a href="pricing" className="text-white font-semibold hover:text-blue-300 transition">
           Pricing
         </a>
         <a href="#" className="text-white font-semibold hover:text-blue-300 transition">
-          workflow
+          Workflow
         </a>
-       
         <a href="#" className="text-white font-semibold hover:text-blue-300 transition">
           Features
         </a>
       </nav>
-    </>
+
+      <a
+        href="/login"
+        className="bg-blue-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-blue-600 transition text-sm sm:text-base"
+      >
+        Login
+      </a>
+    </header>
   );
 };
 
