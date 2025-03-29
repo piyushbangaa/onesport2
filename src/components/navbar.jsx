@@ -6,7 +6,7 @@ const Navbar = () => {
 
       <div className="text-white text-2xl font-bold">OneSport</div>
 
-      <nav className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-black/30 backdrop-blur-xl shadow-lg px-6 py-3 rounded-full flex justify-center items-center gap-6 sm:gap-12 md:gap-16 lg:gap-20 w-[90%] sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px] 2xl:w-[800px] min-w-[300px] max-w-[90%] border border-white/20 lg:relative lg:top-0 lg:left-0 lg:translate-x-0">
+      <nav className="absolute top-16 left-1/2 transform -translate-x-1/2 bg-black/30 backdrop-blur-xl shadow-lg px-6 py-3 rounded-full flex justify-center items-center gap-6 sm:gap-12 md:gap-16 lg:gap-37 w-[90%] sm:w-[400px] md:w-[500px] lg:w-[600px] xl:w-[700px] 2xl:w-[800px] min-w-[300px] max-w-[90%] border border-white/20 lg:relative lg:top-0 lg:left-0 lg:translate-x-0">
         <a href="pricing" className="text-white font-semibold hover:text-blue-300 transition">
           Pricing
         </a>
